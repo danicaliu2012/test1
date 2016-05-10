@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<script src="http://code.jquery.com/jquery-1.12.0.min.js"></script>
+	<script src="http://code.jquery.com/ui/1.10.4/jquery-ui.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+	
+	<script src="https://cdn.firebase.com/v0/firebase.js"></script>
+	<link href="http://code.jquery.com/ui/1.10.4/themes/ui-lightness/jquery-ui.css" rel="stylesheet">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/style.css">
+	<script src="https://cdn.firebase.com/js/client/2.4.1/firebase.js"></script>
+	<script src="js/function.js"></script>
+	<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,600,300' rel='stylesheet' type='text/css'>
+	<title>Danicacademy</title>
+</head>
+
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+    	<div class="top"><span><img src="image/logo.png" class="img-logo"></span><span><span id="Danica">Danica</span><span id="cademy">cademy</span></span></div>
+
+      <button type="button" id="toggle-bar" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+      	
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span> 
+                           
+      </button>
+   
+    </div>
+
+
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+        <li></li>
+ 
+ 
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+      	<li>
+      		<form class="form-inline">
+	      		<div class="form-group signup-form">
+					<input type="text" name="email" id="login-email" class="form-control text ui-widget-content ui-corner-all login-form-margin" placeholder="Email"/>
+					   
+					<input type="password" name="password" id="login-password" class="form-control text ui-widget-content ui-corner-all login-form-margin" placeholder="Password"/>
+
+					<button id="opener-login" type="submit"class="btn btn-primary">Log In</button>
+
+					
+			  
+			 	</div>
+		  	</div>
+
+      	</li>
+     
+
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<body>
+	
+		<div class="row">
+			<div class="container-fluid big-img">
+				<div class="container">
+					<div class="col-xs-12 col-sm-8 col-md-8 col-lg-8 bg">
+						<div class="column-logo">
+						<img src="image/logo-andriod.png" alt="">
+						<img src="image/logo-apple.png" alt="">
+						<img src="image/logo-c.png" alt="">
+						</div>
+					
+						<p>Learn Android, iOS and C</p>
+					</div>
+
+					<div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 info">
+						<div class="form-group">
+		   				<input type="text" class="form-control signup-form" id="register-name" placeholder="User Name">
+
+		   				<input type="text" name="email"id="register-email" class="form-control text ui-widget-content ui-corner-all signup-form" placeholder="Email Address"/>
+
+		   				<input type="password" name="password" id="register-password" class="form-control text ui-widget-content ui-corner-all signup-form" placeholder="Password"/>
+
+		   				
+		   				<div class="btn-primary2">
+		   				<button id="opener-register"type="submit" class="btn signup-form">Free Join</button>
+						</div>
+		   				</div>
+					</div>
+				</div>
+				
+			</div>
+		</div>
+
+		<div class="ui-widget search">
+		<span><label for="autocomplete-1">Tutorial Video Search</label></span><span><input id="autocomplete-1" class="text ui-widget-content ui-corner-all "></span>
+	</div>
+	<div class="row row-main">
+	<div class="container">
+		
+		<ul class="nav nav-tabs">
+			<li class="active"><a href="#home" data-toggle="tab"><img src="image/logo-andriod.png" class="tab-logo"><span>Android</span></a> </li>
+			<li><a href="#menu1" data-toggle="tab"><img src="image/logo-apple.png" class="tab-logo"><span>iOS</span></a></li>
+			<li><a href="#menu2" data-toggle="tab"><img src="image/logo-c.png" class="tab-logo"><span>C</span></a></li>
+			
+		</ul>
+	<div class="tab-content">
+		<div id="home" class="active tab-pane">
+			
+			<h3>Android</h3>
+			<div class="row">
+				<div class="container">
+			<div class="column col-lg-3 col-md-3 col-sm-6 col-xs-12 ">
+				<div class="video-box">
+				<div class="tutorial-video">
+					<iframe width="100%" height="100%" src="https://www.youtube.com/embed/QAbQgLGKd3Y??modestbranding=1controls=0&amp;showinfo=0" frameborder="0" allowfullscreen class="video" ></iframe>
+				</div>
+				<div class="text-box">
+				<h4>Android App Development for Beginners-<br>1. Introduction</h4>
+				</div>
+				</div>
+				
+
+			</div>
+			<div class="column col-lg-3 col-md-3 col-sm-6 col-xs-12">
+				<div class="video-box">
+				<div class="tutorial-video">
+					<iframe width="100%"  src="https://www.youtube.com/embed/zEsDwzjPJ5c?list=PL6gx4Cwl9DGBsvRxJJOzG4r4k_zLKrnxl&amp;?modestbranding=1controls=0&amp;showinfo=0" frameborder="0" allowfullscreen class="video"></iframe>
+				</div>
+				<div class="text-box">
+				<h4>Android App Development for Beginners-<br>2. Installing Android Studio</h4>
+				</div>
+				</div>
+			</div>
+			<div class="column col-lg-3 col-md-3 col-sm-6 col-xs-12">
+				<div class="video-box" id="AndroidAppDevelopmentforBeginners3">
+				<div class="tutorial-video">
+					<iframe width="100%"  src="https://www.youtube.com/embed/r4oIez0sfvY?list=PL6gx4Cwl9DGBsvRxJJOzG4r4k_zLKrnxl&amp;?modestbranding=1controls=0&amp;showinfo=0" allowfullscreen class="video"></iframe>
+				</div>
+				<div class="text-box">
+				<h4>Android App Development for Beginners-<br>3. Setting up Your Project</h4>
+				</div>
+				</div>
+			</div>
+			
+			<div class="column col-lg-3 col-md-3 col-sm-6 col-xs-12">
+				<div class="video-box">
+				<div class="tutorial-video">
+					<iframe width="100%"  src="https://www.youtube.com/embed/vV7h43Iw5SY?rel=0&amp;?modestbranding=1controls=0&amp;showinfo=0" allowfullscreen class="video"></iframe>
+				</div>
+				<div class="text-box">
+				<h4>What is Android Activity &<br> Activity life cycle</h4>
+				</div>
+				</div>
+			</div>
+			
+			</div>
+			</div>
+		</div>
+
+		<div id="menu1" class="tab-pane">
+
+			<h3>iOS</h3>
+			<div class="row">
+				<div class="container">
+			<div class="column col-lg-3 col-md-3 col-sm-6 col-xs-12">
+				<div class="video-box">
+				<div class="tutorial-video">
+					<iframe width="100%"  src="https://www.youtube.com/embed/I0Meyb4ejN4?rel=0&amp;?modestbranding=1controls=0&amp;showinfo=0" allowfullscreen class="video"></iframe>
+				</div>
+				<div class="text-box">
+				<h4>Swift Programming Tutorial For Beginners</h4>
+				</div>
+				</div>
+			</div>
+			<div class="column col-lg-3 col-md-3 col-sm-6 col-xs-12">
+				<div class="video-box">
+				<div class="tutorial-video">
+					<iframe width="100%"  src="https://www.youtube.com/embed/DGt1yBxBw9k?rel=0&amp;?modestbranding=1controls=0&amp;showinfo=0" allowfullscreen class="video"></iframe>
+				</div>
+				<div class="text-box">
+				<h4>Learning Swift Attempt-<br>Creating a Calculator</h4>
+				</div>
+				</div>
+			</div>
+			<div class="column col-lg-3 col-md-3 col-sm-6 col-xs-12">
+				<div class="video-box">
+				<div class="tutorial-video">
+					<iframe width="100%"  src="https://www.youtube.com/embed/war0gHL26ns?rel=0&amp;?modestbranding=1controls=0&amp;showinfo=0" allowfullscreen class="video"></iframe>
+				</div>
+				<div class="text-box">
+				<h4>Swift Tutorial-<br>To Do List App</h4>
+				</div>
+				</div>
+			</div>
+			<div class="column col-lg-3 col-md-3 col-sm-6 col-xs-12">
+				<div class="video-box">
+				<div class="tutorial-video">
+					<iframe width="100%"  src="https://www.youtube.com/embed/qPfvfsx9hb8?rel=0&amp;?modestbranding=1controls=0&amp;showinfo=0" allowfullscreen class="video"></iframe>
+				</div>
+				<div class="text-box">
+				<h4>How to Make Your First Swift App with Xcode (Hello World)</h4>
+				</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	</div>
+
+		<div id="menu2" class="tab-pane">
+			<h3>C</h3>
+			<div class="row">
+				<div class="container">
+			<div class="column col-lg-3 col-md-3 col-sm-6 col-xs-12">
+				<div class="video-box">
+				<div class="tutorial-video">
+					<iframe width="100%"  src="https://www.youtube.com/embed/jrZtWjRAcfs?rel=0&amp;?modestbranding=1controls=0&amp;showinfo=0" allowfullscreen class="video"></iframe>
+				</div>
+				<div class="text-box">
+				<h4>First C Program</h4>
+				</div>
+				</div>
+			</div>
+			<div class="column col-lg-3 col-md-3 col-sm-6 col-xs-12">
+				<div class="video-box">
+				<div class="tutorial-video">
+					<iframe width="100%"  src="https://www.youtube.com/embed/gUKXew-0L1I?rel=0&amp;?modestbranding=1controls=0&amp;showinfo=0" allowfullscreen class="video"></iframe>
+				</div>
+				<div class="text-box">
+				<h4>C Compilation Process</h4>
+				</div>
+				</div>
+			</div>
+			<div class="column col-lg-3 col-md-3 col-sm-6 col-xs-12">
+				<div class="video-box">
+				<div class="tutorial-video">
+					<iframe width="100%"  src="https://www.youtube.com/embed/_oyuKw3vBf8?rel=0&amp;?modestbranding=1controls=0&amp;showinfo=0" allowfullscreen class="video"></iframe>
+				</div>
+				<div class="text-box">
+				<h4>C Programming Tutorial-<br>Passing Arguments to Functions</h4>
+				</div>
+				</div>
+			</div>
+			<div class="column col-lg-3 col-md-3 col-sm-6 col-xs-12">
+				<div class="video-box">
+				<div class="tutorial-video">
+					<iframe width="100%"  src="https://www.youtube.com/embed/BsdyKqF5udc?rel=0&amp;?modestbranding=1controls=0&amp;showinfo=0" allowfullscreen class="video"></iframe>
+				</div>
+				<div class="text-box">
+				<h4>Basic Data Types In C</h4>
+				</div>
+				</div>
+			</div>
+		</div>
+		</div>
+	</div>
+	</div>	
+	</div>
+	</div>
+
+		<div class="row ">
+			<div class="bottom-container">
+				
+					<ul class="foot-info pull-left">
+						<h1>EXPLORE</h1>
+						<li><a href="">Home</a></li>
+						<li><a href="">Blog</a></li>
+						<li><a href="">About us</a></li>
+						<li><a href="">Bits+</a></li>
+						<li><a href="">Jobs</a></li>
+					</ul>
+					<ul class="foot-info pull-left">
+						<h1>DOWNLOAD</h1>
+						<li><a href="">For iOS</a></li>
+						<li><a href="">For Android</a></li>
+					</ul>
+					<ul class="foot-info pull-left">
+						<h1>CONTACT</h1>
+						<li><a href="">Email/Chat</a></li>
+						<li><a href="">Facebook</a></li>
+						<li><a href="">Twitter</a></li>
+					</ul>
+					
+				
+			</div>
+		</div>
+	
+</body>
+<div class="footer-container">
+<footer >Copyright(c)MoQu2014.All Rights Rederved.</footer>
+</div>
+
+</html>
